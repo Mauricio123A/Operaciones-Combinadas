@@ -13,13 +13,13 @@ BotonFacil = function() {
     TercerR = Math.floor(Math.Random() * 2)
     PrimerN = OperacionesFaciles[PrimerR][1]
     SegundoN = OperacionesFaciles[SegundoR][1]
-    if SignosFaciles[TercerR] == " + " {
+    if (SignosFaciles[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN
     }
-    if SignosFaciles[TercerR] == " - " {
+    if (SignosFaciles[TercerR] == " - ") {
         Resultado = PrimerN - SegundoN
     }
-    if SignosFaciles[TercerR] == " x " {
+    if (SignosFaciles[TercerR] == " x ") {
         Resultado = PrimerN * SegundoN
     }
     text = OperacionesFaciles[PrimerR][0] + SignosFaciles[TercerR] + OperacionesFaciles[SegundoR][0] + " = " toString(Resultado)
@@ -31,13 +31,13 @@ BotonNormal = function() {
     TercerR = Math.floor(Math.Random() * 3)
     PrimerN = OperacionesNormales[PrimerR][1]
     SegundoN = OperacionesNormales[SegundoR][1]
-    if SignosNormales[TercerR] == " + " {
+    if (SignosNormales[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN
     }
-    if SignosNormales[TercerR] == " - " {
+    if (SignosNormales[TercerR] == " - ") {
         Resultado = PrimerN - SegundoN
     }
-    if SignosNormales[TercerR] == " x " {
+    if (SignosNormales[TercerR] == " x ") {
         Resultado = PrimerN * SegundoN
     }
     
@@ -50,13 +50,13 @@ BotonDificil = function() {
     TercerR = Math.floor(Math.Random() * 4)
     PrimerN = OperacionesDificiles[PrimerR][1]
     SegundoN = OperacionesDificiles[SegundoR][1]
-    if SignosDificiles[TercerR] == " + " {
+    if (SignosDificiles[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN
     }
-    if SignosDificiles[TercerR] == " - " {
+    if (SignosDificiles[TercerR] == " - ") {
         Resultado = PrimerN - SegundoN
     }
-    if SignosDificiles[TercerR] == " x " {
+    if (SignosDificiles[TercerR] == " x ") {
         Resultado = PrimerN * SegundoN
     }
     
