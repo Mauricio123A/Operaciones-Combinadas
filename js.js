@@ -8,9 +8,9 @@ let SignosDificiles = [" + ", " x ", " - ", " x "];
 
 let Texto = document.getElementById("texto");
 let BotonFacil = function() {
-    let PrimerR = Math.floor(Math.Random() * OperacionesFaciles.length);
-    let SegundoR = Math.floor(Math.Random() * OperacionesFaciles.length);
-    let TercerR = Math.floor(Math.Random() * 2);
+    let PrimerR = Math.floor(Math.random() * OperacionesFaciles.length);
+    let SegundoR = Math.floor(Math.random() * OperacionesFaciles.length);
+    let TercerR = Math.floor(Math.random() * 2);
     let PrimerN = OperacionesFaciles[PrimerR][1];
     let SegundoN = OperacionesFaciles[SegundoR][1];
     let Resultado;
@@ -27,9 +27,9 @@ let BotonFacil = function() {
     Texto.innerHTML = text;
 };
 let BotonNormal = function() {
-    let PrimerR = Math.floor(Math.Random() * OperacionesNormales.length);
-    let SegundoR = Math.floor(Math.Random() * OperacionesNormales.length);
-    let TercerR = Math.floor(Math.Random() * 3);
+    let PrimerR = Math.floor(Math.random() * OperacionesNormales.length);
+    let SegundoR = Math.floor(Math.random() * OperacionesNormales.length);
+    let TercerR = Math.floor(Math.random() * 3);
     let PrimerN = OperacionesNormales[PrimerR][1];
     let SegundoN = OperacionesNormales[SegundoR][1];
     let Resultado;
@@ -47,9 +47,9 @@ let BotonNormal = function() {
     Texto.innerHTML = text;
 };
 let BotonDificil = function() {
-    let PrimerR = Math.floor(Math.Random() * OperacionesDificiles.length);
-    let SegundoR = Math.floor(Math.Random() * OperacionesDificiles.length);
-    let TercerR = Math.floor(Math.Random() * 4);
+    let PrimerR = Math.floor(Math.random() * OperacionesDificiles.length);
+    let SegundoR = Math.floor(Math.random() * OperacionesDificiles.length);
+    let TercerR = Math.floor(Math.random() * 4);
     let PrimerN = OperacionesDificiles[PrimerR][1];
     let SegundoN = OperacionesDificiles[SegundoR][1];
     let Resultado;
