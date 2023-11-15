@@ -22,7 +22,7 @@ BotonFacil = function() {
     if SignosFaciles[TercerR] == " x " {
         Resultado = PrimerN * SegundoN
     }
-    text = OperacionesFaciles[PrimerR][0] + SignosFaciles[TercerR] + OperacionesFaciles[SegundoR][0] + " = " Resultado
+    text = OperacionesFaciles[PrimerR][0] + SignosFaciles[TercerR] + OperacionesFaciles[SegundoR][0] + " = " toString(Resultado)
     Texto.innerHTML = text
 }
 BotonNormal = function() {
@@ -41,7 +41,7 @@ BotonNormal = function() {
         Resultado = PrimerN * SegundoN
     }
     
-    text = OperacionesNormales[PrimerR][0] + SignosNormales[TercerR] + OperacionesNormales[SegundoR][0] + " = " + Resultado
+    text = OperacionesNormales[PrimerR][0] + SignosNormales[TercerR] + OperacionesNormales[SegundoR][0] + " = " + toString(Resultado)
     Texto.innerHTML = text
 }
 BotonDificil = function() {
@@ -60,7 +60,7 @@ BotonDificil = function() {
         Resultado = PrimerN * SegundoN
     }
     
-    text = OperacionesDificiles[PrimerR][0] + SignosDificiles[TercerR] + OperacionesDificiles[SegundoR][0] + " = " + Resultado
+    text = OperacionesDificiles[PrimerR][0] + SignosDificiles[TercerR] + OperacionesDificiles[SegundoR][0] + " = " + toString(Resultado)
     Texto.innerHTML = text
 }
 warn(OperacionesFaciles.length)
