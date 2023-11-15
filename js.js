@@ -14,7 +14,7 @@ let BotonFacil = function() {
     let PrimerN = OperacionesFaciles[PrimerR][1];
     let SegundoN = OperacionesFaciles[SegundoR][1];
     let Resultado;
-    warn(PrimerR, SegundoR, TercerR);
+    console.warn(PrimerR, SegundoR, TercerR);
     if (SignosFaciles[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN;
     }
@@ -34,7 +34,7 @@ let BotonNormal = function() {
     let PrimerN = OperacionesNormales[PrimerR][1];
     let SegundoN = OperacionesNormales[SegundoR][1];
     let Resultado;
-    warn(PrimerR, SegundoR, TercerR);
+    console.warn(PrimerR, SegundoR, TercerR);
     if (SignosNormales[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN;
     }
@@ -55,6 +55,7 @@ let BotonDificil = function() {
     let PrimerN = OperacionesDificiles[PrimerR][1];
     let SegundoN = OperacionesDificiles[SegundoR][1];
     let Resultado;
+    console.warn(PrimerR, SegundoR, TercerR);
     if (SignosDificiles[TercerR] == " + ") {
         Resultado = PrimerN + SegundoN;
     }
@@ -68,6 +69,6 @@ let BotonDificil = function() {
     let text = OperacionesDificiles[PrimerR][0] + SignosDificiles[TercerR] + OperacionesDificiles[SegundoR][0] + " = " + Resultado;
     Texto.innerHTML=text;
 };
-warn(OperacionesFaciles.length);
-warn(OperacionesNormales.length);
-warn(OperacionesDificiles.length);
+console.warn(OperacionesFaciles.length);
+console.warn(OperacionesNormales.length);
+console.warn(OperacionesDificiles.length);
