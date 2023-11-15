@@ -63,3 +63,6 @@ BotonDificil = function() {
     text = OperacionesDificiles[PrimerR][0] + SignosDificiles[TercerR] + OperacionesDificiles[SegundoR][0] + " = " + Resultado
     Texto.innerHTML = text
 }
+warn(OperacionesFaciles.length)
+warn(OperacionesNormales.length)
+warn(OperacionesDificiles.length)
