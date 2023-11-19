@@ -235,7 +235,7 @@ let BotonDificil = function() {
         [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + Potencias[0]],
         [NumerosRandomNormales[1] + Potencias[1] + " - " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
         [NumerosRandomNormales[1] + Potencias[1] + " + " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
-        [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
+        [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]]
     ];
     let OperacionesNormales2 = [
         [NumerosRandomNormales[2] + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
@@ -253,7 +253,20 @@ let BotonDificil = function() {
 
         ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " - " + "(" + (NumerosRandomNormales[2] * -1) + ")" + ")" + Potencias[2]],
         ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " + " + "(" + (NumerosRandomNormales[2] * -1) + ")" + ")" + Potencias[2]],
-        ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (NumerosRandomNormales[2] * -1) + ")" + ")" + Potencias[2]]
+        ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (NumerosRandomNormales[2] * -1) + ")" + ")" + Potencias[2]],
+
+        ["(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1])+ ")" + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1])+ ")" + Potencias[2] + " + " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1])+ ")" + Potencias[2] + " * " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2] + " + " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2] + " * " + NumerosRandomNormales[3] + Potencias[3]],
+        [NumerosRandomNormales[3] + Potencias[3] + " - " + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " + " + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " - " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " + " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]]
     ];
     let SignosNormales = [" + ", " * ", " - ", " * "];
     let PrimerR = Math.floor(Math.random() * OperacionesNormales.length);
