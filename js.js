@@ -1,6 +1,4 @@
 // ⁰¹²³⁴⁵⁶⁷⁸⁹
-let OperacionesDificiles = [["((+8²) + (-2³))", 56],["((-20) x (-1⁴))", -20],["(+5 x (-2))²", 100]];
-
 let Texto = document.getElementById("texto");
 var Multi = false;
 let BotonMultiplicacion = function(){
