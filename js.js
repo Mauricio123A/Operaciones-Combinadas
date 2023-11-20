@@ -322,4 +322,3 @@ let BotonDificil = function() {
         BotonDificil();
     };
 };
-console.warn(Multi)
