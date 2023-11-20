@@ -224,9 +224,9 @@ let BotonDificil = function() {
         ["(" + "(" +(NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + "(" + (NumerosRandomNormales[0] * -1) + ")" + ")" + Potencias[0]],
         ["(" + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + "(" + (NumerosRandomNormales[0] * -1) + ")" + ")" + Potencias[0]],
 
-        ["(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")" + Potencias[0] + " - " + NumerosRandomNormales[1] + Potencias[1]],
-        ["(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")" + Potencias[0] + " + " + NumerosRandomNormales[1] + Potencias[1]],
-        ["(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")" + Potencias[0] + " * " + NumerosRandomNormales[1] + Potencias[1]],
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " - " + NumerosRandomNormales[1] + Potencias[1]],
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " + " + NumerosRandomNormales[1] + Potencias[1]],
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " * " + NumerosRandomNormales[1] + Potencias[1]],
         ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " - " + NumerosRandomNormales[1] + Potencias[1]],
         ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " + " + NumerosRandomNormales[1] + Potencias[1]],
         ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " * " + NumerosRandomNormales[1] + Potencias[1]],
