@@ -1,6 +1,6 @@
 // ⁰¹²³⁴⁵⁶⁷⁸⁹
 let Texto = document.getElementById("texto");
-let Decimales = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.15,0.25,0.50,0.500, 0.75, 0.01, 0.05, 0.025, 0.050, 0.55, 0.95, 0.09, 0.35,0.300, 0.250, 0.520, 0.150, 0.80];
+let Decimales = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9];
 var Multi = false;
 let BotonMultiplicacion = function(){
     if (Multi == true){
