@@ -1,5 +1,6 @@
 // ⁰¹²³⁴⁵⁶⁷⁸⁹
 let Texto = document.getElementById("texto");
+let Decimales = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.15,0.25,0.50,0.500, 0.75, 0.01, 0.05, 0.025, 0.050, 0.55, 0.95, 0.09, 0.33,0.303, 0.250, 0.520, 0.152, 0.82];
 var Multi = false;
 let BotonMultiplicacion = function(){
     if (Multi == true){
@@ -91,6 +92,9 @@ let BotonNormal = function() {
     if (typeof spanRes !== "undefined"){
         spanRes.remove();
     };
+
+    let Random = Math.random();
+    console.warn(Decimales[Math.floor(Random * (Decimales.length))], Random, Decimales.length);
     let NumerosPotencias = [Math.floor(Math.random() *4), Math.floor(Math.random() *4), Math.floor(Math.random() *4), Math.floor(Math.random() *4)];
     let Potencias = [];
     for (i = 0; i < 4; i++){
@@ -118,7 +122,20 @@ let BotonNormal = function() {
         ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + NumerosRandomNormales[0] + Potencias[0]],
         ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " - " + "(" + (NumerosRandomNormales[0] * -1) + ")" + Potencias[0]],
         ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + "(" + (NumerosRandomNormales[0] * -1) + ")" + Potencias[0]],
-        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + "(" + (NumerosRandomNormales[0] * -1) + ")" + Potencias[0]]
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + "(" + (NumerosRandomNormales[0] * -1) + ")" + Potencias[0]],
+
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " - " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " + " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " * " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " - " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " + " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " * " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " - " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " - " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]]
     ];
     let OperacionesNormales2 = [
         [NumerosRandomNormales[2] + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
@@ -132,7 +149,20 @@ let BotonNormal = function() {
         ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + NumerosRandomNormales[2] + Potencias[2]],
         ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " - " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
         ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " + " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
-        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]]
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
+        
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " + " + NumerosRandomNormales[3] + Potencias[3]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " * " + NumerosRandomNormales[3] + Potencias[3]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " - " + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " + " + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2] + " * " + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " - " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " + " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[2]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " - " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[2]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " + " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[2]],
+        ["(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[2]]
     ];
     let SignosNormales = [" + ", " * ", " - "];
     let PrimerR = Math.floor(Math.random() * OperacionesNormales.length);
@@ -204,6 +234,8 @@ let BotonDificil = function() {
         };
     };
 
+    let Random = Math.random();
+    console.warn(Decimales[Math.floor(Random * (Decimales.length))], Random, Decimales.length);
     let FraccionesRandomNormales = [[Math.floor(Math.random() *19 +1),Math.floor(Math.random() *4 +1)], [Math.floor(Math.random() *19 +1),Math.floor(Math.random() *4 +1)], [Math.floor(Math.random() *19 +1),Math.floor(Math.random() *4 +1)], [Math.floor(Math.random() *19 +1),Math.floor(Math.random() *4 +1)]]
     let NumerosRandomNormales = [Math.floor(Math.random() *19 +1), Math.floor(Math.random() *19 +1), Math.floor(Math.random() *19 +1), Math.floor(Math.random() *19 +1)];
     let OperacionesNormales = [
@@ -235,7 +267,39 @@ let BotonDificil = function() {
         [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + Potencias[0]],
         [NumerosRandomNormales[1] + Potencias[1] + " - " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
         [NumerosRandomNormales[1] + Potencias[1] + " + " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
-        [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]]
+        [NumerosRandomNormales[1] + Potencias[1] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
+
+
+
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " - " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " + " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " * " + NumerosRandomNormales[1] + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " - " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " + " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0] + " * " + "(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " - " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " - " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " + " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]],
+        ["(" + (NumerosRandomNormales[1] * -1) + ")" + Potencias[1] + " * " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[0]],
+
+        ["(" + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[1] + " - " + "(" + (NumerosRandomNormales[0] * -1) + ")" + ")" + Potencias[0]],
+        ["(" + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[1] + " + " + "(" + (NumerosRandomNormales[0] * -1) + ")" + ")" + Potencias[0]],
+        ["(" + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[1] + " * " + "(" + (NumerosRandomNormales[0] * -1) + ")" + ")" + Potencias[0]],
+
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " - " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " + " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        ["(" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1])+ ")"+ ")" + Potencias[0] + " * " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " - " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " + " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        ["(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0] + " * " + Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " - " + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + Potencias[0]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " + " + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + Potencias[0]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " * " + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + Potencias[0]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " - " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " + " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]],
+        [Decimales[Math.floor(Random * (Decimales.length))]  + Potencias[1] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[0][0] + "/" + FraccionesRandomNormales[0][1]) + ")" + ")" + Potencias[0]]
     ];
     let OperacionesNormales2 = [
         [NumerosRandomNormales[2] + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
@@ -266,7 +330,39 @@ let BotonDificil = function() {
         [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + Potencias[2]],
         [NumerosRandomNormales[3] + Potencias[3] + " - " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]],
         [NumerosRandomNormales[3] + Potencias[3] + " + " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]],
-        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]]
+        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + "-" + "(" + (FraccionesRandomNormales[2][0] + "/" + FraccionesRandomNormales[2][1]) + ")" + ")" + Potencias[2]],
+
+
+
+        [NumerosRandomNormales[2] + Potencias[2] + " - " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[3]],
+        [NumerosRandomNormales[2] + Potencias[2] + " + " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[3]],
+        [NumerosRandomNormales[2] + Potencias[2] + " * " + Decimales[Math.floor(Random * (Decimales.length))] + Potencias[3]],
+        [NumerosRandomNormales[2] + Potencias[2] + " - " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3]],
+        [NumerosRandomNormales[2] + Potencias[2] + " + " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3]],
+        [NumerosRandomNormales[2] + Potencias[2] + " * " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " - " + NumerosRandomNormales[2] + Potencias[2]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " + " + NumerosRandomNormales[2] + Potencias[2]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " * " + NumerosRandomNormales[2] + Potencias[2]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " - " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " + " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
+        ["(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + Potencias[3] + " * " + "(" + (NumerosRandomNormales[2] * -1) + ")" + Potencias[2]],
+
+        ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " - " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + ")" + Potencias[2]],
+        ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " + " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + ")" + Potencias[2]],
+        ["(" + "(" + (NumerosRandomNormales[3] * -1) + ")" + Potencias[3] + " * " + "(" + (Decimales[Math.floor(Random * (Decimales.length))] * -1) + ")" + ")" + Potencias[2]],
+
+        ["(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2] + " + " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2] + " * " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2] + " - " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2] + " + " + NumerosRandomNormales[3] + Potencias[3]],
+        ["(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2] + " * " + NumerosRandomNormales[3] + Potencias[3]],
+        [NumerosRandomNormales[3] + Potencias[3] + " - " + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " + " + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " - " + "(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " + " + "(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2]],
+        [NumerosRandomNormales[3] + Potencias[3] + " * " + "(" + "-" + "(" + Decimales[Math.floor(Random * (Decimales.length))] + ")" + ")" + Potencias[2]]
     ];
     let SignosNormales = [" + ", " * ", " - ", " * "];
     let PrimerR = Math.floor(Math.random() * OperacionesNormales.length);
